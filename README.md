@@ -80,3 +80,25 @@ Alvin Leroy Steagall
 Product Owner | Scrum Master | Squad Lead
 
 Projeto de portfólio voltado à aplicação de IA em atividades de gestão de produtos e trabalho ágil.
+
+## Experimente o Refina
+
+Aplicação: https://refina-alvin.streamlit.app/
+
+## Sobre este case
+
+Projeto demonstrativo de Alvin Leroy Steagall, desenvolvido com
+Python, Streamlit e integração com a API do Google Gemini.
+
+A aplicação apoia o refinamento de histórias de usuário, propondo
+perguntas, critérios de aceite, dependências, riscos e estimativas
+provisórias quando há referências da squad.
+
+## Validação e limitações
+
+Foram realizados testes com dados fictícios, com e sem referências
+de estimativa. Os resultados estão registrados em casos_de_teste.md.
+
+A IA pode presumir requisitos não informados. Todas as sugestões
+devem ser revisadas pela equipe. O serviço está sujeito às cotas
+e à disponibilidade do provedor de IA.
