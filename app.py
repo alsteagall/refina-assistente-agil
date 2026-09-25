@@ -101,7 +101,14 @@ if enviar:
         except errors.APIError as erro:
             codigo = getattr(erro, "code", None)
 
-            if codigo == 429:
+            if codigo == 503:
+                st.warning(
+                    "O serviço de IA está temporariamente indisponível. "
+                    "Aguarde alguns instantes e clique novamente em "
+                    "'Analisar história'. Não é necessário preencher "
+                    "os campos outra vez."
+                )
+            elif codigo == 429:
                 st.error(
                     "O Gemini informou um limite de uso ou de cota. "
                     "Confira os limites no Google AI Studio."
